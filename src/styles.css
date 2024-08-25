@@ -1,0 +1,69 @@
+/* Global Styles */
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background: linear-gradient(120deg, #ff7e5f, #feb47b); /* Colorful gradient background */
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Table Styles */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.3); /* Light translucent background */
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly opaque background */
+    color: #333;
+}
+
+tr:nth-child(even) td {
+    background-color: rgba(255, 255, 255, 0.6); /* Alternating row colors */
+}
+
+/* Add hover effect */
+tr:hover td {
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    th, td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
